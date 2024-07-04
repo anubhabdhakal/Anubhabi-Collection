@@ -1,0 +1,25 @@
+.cart-manipulator {
+  margin-top: 2rem;
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  .arithmetic-container {
+    padding: 0.5rem 1rem;
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    border: 1px solid var(--input-border);
+    border-radius: 60px;
+    img {
+      width: 10px;
+      height: 10px;
+
+      &:hover {
+        cursor: pointer;
+      }
+    }
+  }
+  .add-cart-btn {
+    flex: 1;
+  }
+}

@@ -1,0 +1,17 @@
+.new-status-container {
+  max-height: 20px;
+
+  button {
+    font-size: 9px;
+    padding: 4px 8px;
+    color: #ffffff;
+    border: none;
+    border-radius: 1rem;
+    background-color: var(--new-status-button-background);
+
+    &:is(:hover, :focus) {
+      cursor: pointer;
+      outline: none;
+    }
+  }
+}

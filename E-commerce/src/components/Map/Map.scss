@@ -1,0 +1,8 @@
+.map-container {
+  width: 100%;
+  iframe {
+    border: none;
+    box-shadow: 2px 2px 2px var(--input-border);
+    width: 100% !important;
+  }
+}

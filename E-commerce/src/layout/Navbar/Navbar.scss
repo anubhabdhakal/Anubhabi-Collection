@@ -1,0 +1,9 @@
+@import "../../index.scss";
+
+.navbar-container {
+  @include center_item;
+  height: 10vh;
+  padding: 0rem 1rem;
+  font-weight: 500;
+  border-bottom: 1px solid var(--input-border);
+}

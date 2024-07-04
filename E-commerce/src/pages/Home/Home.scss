@@ -1,0 +1,11 @@
+.home-page-wrapper {
+  .image-slider-wrapper {
+    content: "";
+    width: 100vw;
+    height: 100vh;
+
+    .image-slider-container {
+      background-size: cover;
+    }
+  }
+}

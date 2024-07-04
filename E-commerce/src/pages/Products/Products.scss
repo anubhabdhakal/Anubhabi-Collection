@@ -1,0 +1,15 @@
+.product-page-wrapper {
+  header {
+    width: 100%;
+    height: 70vh;
+
+    .image-slider-container {
+      background-repeat: repeat;
+      background-size: contain;
+
+      .image-caption {
+        font-size: 5rem;
+      }
+    }
+  }
+}

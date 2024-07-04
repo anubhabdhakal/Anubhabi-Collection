@@ -1,0 +1,48 @@
+@font-face {
+  font-family: Manrope;
+  src: url(./font/Manrope-Medium.ttf);
+}
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  --footer-view-port-change: 570px;
+  --offer-board-background: rgb(32, 32, 37);
+  --offer-board-color: #ffffff;
+  --new-status-button-background: #34bf49;
+  --hover-gray-color: #7e7e84;
+  --font-color-gray: rgba(32, 32, 37, 0.7);
+  --input-border: rgb(222, 226, 230);
+  --purple-button-color: rgb(23, 23, 32);
+  --whilte-button-color: #ffffff;
+  --footer-background: #f7f7f7;
+  --best-selling-background: rgb(32, 32, 37);
+  --single-product-modal-container: 550px;
+  --avatar-background: #0288d1;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Manrope", sans-serif;
+}
+
+@mixin center_item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+@media screen and (max-width: 600px) {
+  html {
+    font-size: 14px;
+  }
+}

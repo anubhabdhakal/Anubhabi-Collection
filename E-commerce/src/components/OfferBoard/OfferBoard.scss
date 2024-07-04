@@ -1,0 +1,23 @@
+@import '../../index.scss';
+
+.offer-board-container{
+    @include center_item;
+    width: 100vw;
+    height: 46px;
+    background-color: var(--offer-board-background);
+    color : var(--offer-board-color);
+}
+
+.board-title{
+    h3 {
+        font-size: 0.8125rem;
+        font-weight: 400;
+    }
+    #link {
+        margin-left: 0.3rem;
+        text-decoration: underline;
+        &:is(:hover,:focusm){
+            cursor: pointer;
+        }
+    }
+}

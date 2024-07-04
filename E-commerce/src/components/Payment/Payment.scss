@@ -1,0 +1,23 @@
+@import "../../index.scss";
+.payment-container {
+  @include center_item;
+  flex-direction: column;
+  border-top: 1px solid var(--input-border);
+  padding: 1rem;
+  abbr {
+    text-decoration: none;
+  }
+  img {
+    width: 35px;
+    height: 35px;
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+  p {
+    font-size: 0.8125rem;
+    color: var(--font-color-gray);
+  }
+}

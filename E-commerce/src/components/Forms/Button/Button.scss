@@ -1,0 +1,26 @@
+@import "../../../index.scss";
+.button-container {
+  padding: 0.5rem 1rem;
+  border-radius: 1.8rem;
+  @include center_item;
+  gap: 0.5rem;
+  width: 95%;
+  border: none;
+
+  &:hover {
+    background-color: var(--purple-button-color) !important;
+    color: #ffffff !important;
+    cursor: pointer;
+  }
+  img {
+    width: 10px;
+    height: 10px;
+  }
+}
+.disabled {
+  background-color: var(--purple-button-color) !important;
+  color: #ffffff !important;
+  &:hover {
+    cursor: not-allowed;
+  }
+}

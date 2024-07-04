@@ -1,0 +1,34 @@
+.avatar-container {
+  abbr {
+    text-decoration: none;
+    cursor: pointer;
+  }
+  .avatar-photo-container {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.1rem;
+
+    #profile-pic {
+      width: inherit;
+      height: inherit;
+      border-radius: 50%;
+    }
+  }
+  .avatar-image-container {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    // background-color: var(--avatar-background);
+    background-color: var(--purple-button-color);
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.1rem;
+  }
+}

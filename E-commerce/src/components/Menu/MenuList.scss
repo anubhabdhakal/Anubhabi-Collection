@@ -1,0 +1,41 @@
+@import "../../index.scss";
+
+.menus-container {
+  width: 40%;
+  .menus-for-mobile {
+    display: none;
+  }
+  .menus-for-desktop {
+    @include center_item;
+    gap: 1rem;
+    width: 100%;
+  }
+  @media screen and (max-width: 950px) {
+    .menus-for-desktop {
+      display: none;
+    }
+    .menus-for-mobile {
+      display: block;
+    }
+  }
+}
+
+.menu-for-mobile-container {
+  width: 80%;
+  display: flex;
+  gap: 1rem;
+  img {
+    width: 20px;
+    height: 20px;
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}
+
+.main-menu-container {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}

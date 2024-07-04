@@ -1,0 +1,74 @@
+@import "../../index.scss";
+.features-container {
+  width: 40%;
+
+  .features-list-for-mobile {
+    width: 100%;
+    display: none;
+  }
+  .features-list-for-desktop {
+    @include center_item;
+    gap: 0.5rem;
+    font-size: 0.8125rem;
+  }
+  .feature-container {
+    padding: 0.5rem 1rem;
+
+    &:hover > p,
+    &:hover {
+      color: #7e7e84;
+      cursor: pointer;
+    }
+    &:is(:hover, :focus) > .line {
+      transition: 0.3s 0.03s ease-in-out;
+      animation: slider 0.3s normal;
+      border: 1px solid #7e7e84;
+      width: 100%;
+    }
+  }
+  .ft {
+    @include center_item;
+    gap: 0.2rem;
+    .cart-number {
+      @include center_item;
+      background-color: #000000;
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      color: #ffffff;
+    }
+  }
+  @media screen and (max-width: 950px) {
+    .features-list-for-desktop {
+      display: none;
+    }
+    .features-list-for-mobile {
+      display: block;
+    }
+  }
+}
+
+.cart-number {
+  @include center_item;
+  background-color: #000000;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  color: #ffffff;
+}
+.features-for-mobile {
+  width: 100%;
+  display: flex;
+  gap: 1rem;
+  justify-content: flex-end;
+  align-items: center;
+  .wishlist {
+    display: flex;
+    align-items: center;
+  }
+
+  img {
+    width: 15px;
+    height: 15px;
+  }
+}

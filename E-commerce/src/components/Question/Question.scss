@@ -1,0 +1,30 @@
+@import "../../index.scss";
+.question-container {
+  padding: 1rem 0rem;
+  border-bottom: 1px solid var(--input-border);
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  .content-section {
+    @include center_item;
+    justify-content: space-between;
+    p {
+      text-transform: capitalize;
+    }
+    img {
+      width: 15px;
+      height: 15px;
+    }
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+  #answer {
+    font-size: 0.8175rem;
+    font-weight: 400;
+    padding-left: 1rem;
+    color: var(--font-color-gray);
+  }
+}

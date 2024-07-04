@@ -1,0 +1,56 @@
+@import "../../index.scss";
+@keyframes slider {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 90%;
+  }
+}
+.menu-modal-wrapper {
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  z-index: 9999;
+  top: 0px;
+  background: #2a2a2a90 0% 0% no-repeat padding-box;
+  .menu-modal-container {
+    width: 90%;
+    max-width: 330px;
+    height: 100%;
+    background-color: #ffffff;
+    animation: slider 1s;
+    font-size: 0.8125rem;
+  }
+  header {
+    padding: 1rem;
+    display: flex;
+    justify-content: flex-end;
+    img {
+      width: 20px;
+      height: 20px;
+
+      &:hover {
+        cursor: pointer;
+      }
+    }
+  }
+  main {
+    padding: 1rem 1rem;
+    .menu-modal-lists {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 0.2rem;
+      border-bottom: 0.5px solid var(--hover-gray-color);
+      .left {
+        @include center_item;
+        gap: 0.5rem;
+      }
+      img {
+        width: 15px;
+        height: 15px;
+      }
+    }
+  }
+}
